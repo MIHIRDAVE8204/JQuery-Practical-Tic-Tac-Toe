@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tic Tac Toe </title>
+</head>
+
+<body>
+    
+    <div class="msg-Container hide">
+        <p id="msg">winner</p>
+    </div>
+    <h2 class="typing-white">WelcomeTo The <span class="auto-type"></span> </h2>
+
+    <button id="newbtn" onclick="resetGame()">New Game</button>
+
+    <div class="container">
+        
+        <div class="game">
+            <div class="grid">
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+            </div>
+
+            <div class="grid">
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+            </div>
+
+            <div class="grid">
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+                <button class="contain" id="box"></button>
+            </div>
+        </div>
+    </div>
+    <button id="resetbtn" onclick="resetGame()">Reset Game</button>
+    
+
+</body>
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Game guys", "Tic-Tac-Toe 😍", "Have a Funnn!!"],
+
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
+
+</script>
+</html>
